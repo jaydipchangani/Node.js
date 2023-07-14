@@ -73,3 +73,29 @@ ReactDom.render(<>
     <p>Your Login Time is {time}</p>
     </>
     ,document.getElementById('root'))
+
+########################################################
+
+//Creating Sample Gallery Using Node.js
+
+import React from 'react';
+import ReactDom from 'react-dom';
+
+const img1="https://picsum.photos/200/300"
+const img2="https://picsum.photos/250/300"
+const img3="https://picsum.photos/300/300"
+const img4="https://picsum.photos/210/300"
+const l="https://picsum.photos/"
+
+ReactDom.render(<>
+    <h1>Welcome to Gallery</h1>
+    
+    <img src={img1} alt='Image1' /> {' '}
+    <img src={img2} alt='Image1' />{' '}
+    <img src={img4} alt='Image1' /> {' '}
+    <a href={l} target='_JD'>
+    <img src={img3} alt='Image1' />
+    </a>
+    <p contentEditable>Give your Suggestions</p>
+    </>
+    ,document.getElementById('root'))
