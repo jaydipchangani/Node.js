@@ -39,4 +39,20 @@ reactDom.render(
         </ol>
     </>,document.getElementById('root'));
 
+########################################################
+//Js in Node.js
 
+import React from 'react';
+import ReactDom from 'react-dom';
+
+const name ="User" 
+const h="Hello "
+
+ReactDom.render(
+    <>
+        <h1>{h + name} !!</h1>
+        <p>My lucky number is {parseInt(Math.random()*10)}</p>
+        <p>We can use only expression in curly brackets<br/>
+        we can not use statements like condition in it</p>
+    </>
+    ,document.getElementById('root'));
