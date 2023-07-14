@@ -57,3 +57,19 @@ ReactDom.render(
         <p>{` ${h} ${name} This is the use of Templet Literals`}</p>
     </>
     ,document.getElementById('root'));
+
+########################################################
+// Current Date and time 
+import React from 'react';
+import ReactDom from 'react-dom';
+
+var date=new Date().toLocaleDateString();
+var time=new Date().toLocaleTimeString();
+
+
+ReactDom.render(<>
+    <h1>Hello User !!</h1>
+    <p>Your Login Date is {date}</p>
+    <p>Your Login Time is {time}</p>
+    </>
+    ,document.getElementById('root'))
