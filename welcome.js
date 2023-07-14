@@ -54,5 +54,6 @@ ReactDom.render(
         <p>My lucky number is {parseInt(Math.random()*10)}</p>
         <p>We can use only expression in curly brackets<br/>
         we can not use statements like condition in it</p>
+        <p>{` ${h} ${name} This is the use of Templet Literals`}</p>
     </>
     ,document.getElementById('root'));
